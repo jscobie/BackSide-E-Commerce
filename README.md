@@ -44,17 +44,22 @@ git clone git@github.com:jscobie/BackSide-E-Commerce.git
 ```
 npm install
 ```
-3. You'll then need to configure your MySQL user/password in the server.js file
-4. You will then need to run the following commands in your MySQL server command line to build the database and tables and then seed/populate the tables needed:
-```
-mysql -u root -p
-SOURCE db/schema.sql
-```
-5. You will need to make an .env file to handle the MySQL connection, an example file (.env.EXAMPLE) has been included for you to reference. Contents of .env.EXAMPLE are:
+3. You will need to make an .env file to handle the MySQL connection, an example file (.env.EXAMPLE) has been included for you to reference. Contents of .env.EXAMPLE are:
 ```
 DB_USER=''
 DB_PASSWORD=''
 DB_DBASE='employee_db'
+```
+4. You will then need to run the following commands in your MySQL server command line to build the database and tables and then seed/populate the tables needed:
+```
+- mysql -u root -p
+- <enter password>
+- SOURCE db/schema.sql
+- USE ecommerce_db;
+```
+5. You will need to seed the database:
+```
+node /seeds/seed.js
 ```
 6. Finally to start the Employee Tracker you need the command:
 ```
