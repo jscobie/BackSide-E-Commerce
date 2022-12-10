@@ -5,7 +5,19 @@
 
 ## Description
 
+This goal of this challenge is to build the back end for an e-commerce site. Due to the prevalence of these e-commerce platforms, developers should understand the fundamental architecture of e-commerce sites. I was tasked with starting with a working Express.js API and configure it to use Sequelize to interact with a MySQL database. I needed to edit the following files to add related data based on the challenge requirements:
+* Files under ***models*** folder:
+    * Category.js, Product.js, ProductTag.js, and Tag.js - needed columns defined for each table/model
+    * index.js - needed relationships of tables added
+* Files in the ***root (/)*** folder:
+    * server.js in / folder - needed to import sequelize connection added and sync'ing of models before starting the server
+* Files under ***routes*** folder:
+    * product-routers.js, tag-routes.js, and category-routes.js - needed complete route builds for various get, post, put/patch, and delete
 
+> User Story:
+>>AS A manager at an internet retail company<br>
+>>I WANT a back end for my e-commerce website that uses the latest technologies<br>
+>>SO THAT my company can compete with other e-commerce companies<br>
 
 [Github Repository Link](https://github.com/jscobie/BackSide-E-Commerce)<br>
 

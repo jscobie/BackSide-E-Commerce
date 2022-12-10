@@ -1,6 +1,7 @@
 # Personal ignores
 _provided_files/
 .env
+.prettierignore
 
 # Logs
 logs
