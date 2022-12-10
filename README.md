@@ -12,7 +12,7 @@ This goal of this challenge is to build the back end for an e-commerce site. Due
 * Files in the ***root (/)*** folder:
     * server.js in / folder - needed to import sequelize connection added and sync'ing of models before starting the server
 * Files under ***routes*** folder:
-    * product-routers.js, tag-routes.js, and category-routes.js - needed complete route builds for various get, post, put/patch, and delete
+    * product-routes.js, tag-routes.js, and category-routes.js - needed complete route builds for various get, post, put/patch, and delete
 
 > User Story:
 >>AS A manager at an internet retail company<br>
