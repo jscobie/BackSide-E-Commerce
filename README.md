@@ -1,22 +1,16 @@
-# Challenge 12 SQL: Employee Tracker
+# Challenge 13 ORM: E-Commerce Back End
 
 ## Badges
 [![License: CC0-1.0](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-This project's challenge  was built to show my continued learning in Full Stack web development. This project I have learned and will be using SQL and MySQL to populate values into a database and retrieve them through HTTP requests using an Express Server. This Employee Tracker is not a website but a command line interface to manage an employee database using Node.js, select NPM packages (Inquirer, MySQL2, and Console.table), and a MySQL database.
 
-Additionally in a reach to Module 13 I have added the dotenv option so I can hide my MySQL connection properties, mainly the user/password combination, since storing that on Github is unwise.
 
-[Github Repository Link](https://github.com/jscobie/EmployeeTracker)<br>
-[Git Hub Deployed page link (not functioning since project is a command line application, this is just a repository site hosting the readme.md file)](https://jscobie.github.io/EmployeeTracker/)
+[Github Repository Link](https://github.com/jscobie/BackSide-E-Commerce)<br>
 
 Video walkthrough of the working Employee Tracker command line application (challenge required options):<br>
-[Video walkthrough of completed application](https://drive.google.com/file/d/1dylDoVNBgwwhaMt1b8In5L0bHgfT7SiV/view)
-
-Bonus Video walkthrough of the working Employee Tracker command line application (BONUS options: Delete Employee, Department, Role; View Employees by Manager; View Utilized Budget by Department):<br>
-[Video walkthrough of completed application BONUS items](https://drive.google.com/file/d/1jbo_ZCKQnOjJy0pA7KWIZJBRzW7ra6qo/view)
+[Video walkthrough of completed application and Insomia results](https://link_here.com)
 
 ## Table of Contents
 
@@ -32,7 +26,7 @@ Bonus Video walkthrough of the working Employee Tracker command line application
 
 1. Clone to your computer using SSH from GitHub:
 ```
-git clone git@github.com:jscobie/EmployeeTracker.git
+git clone git@github.com:jscobie/BackSide-E-Commerce.git
 ```
 2. You'll need to run to install the node required dependencies after you clone the install by running:
 ```
@@ -43,11 +37,9 @@ npm install
 ```
 mysql -u root -p
 SOURCE db/schema.sql
-SOURCE db/seeds.sql
 ```
 5. You will need to make an .env file to handle the MySQL connection, an example file (.env.EXAMPLE) has been included for you to reference. Contents of .env.EXAMPLE are:
 ```
-DB_HOST='localhost'
 DB_USER=''
 DB_PASSWORD=''
 DB_DBASE='employee_db'
@@ -73,9 +65,10 @@ N/A
 Credit to the MSU Bootcamp and instructors for training and training materials to resolve some of these issues.<br>
 *Programs, packages used:*<br>
 [Node.js](https://nodejs.org/en/)<br>
-[Console.table npm package](https://www.npmjs.com/package/console.table)<br>
+[Insomnia (for testing)](https://insomnia.rest/)<br>
+[Sequelize](https://sequelize.org/)<br>
+[Express JS](https://expressjs.com/)<br>
 [Mysql2 npm package](https://www.npmjs.com/package/mysql2)<br>
-[Inquirer npm package (Version 8.2.4)](https://www.npmjs.com/package/inquirer/v/8.2.4)<br>
 [dotenv npm package](https://www.npmjs.com/package/dotenv)
 
 ## Questions:
