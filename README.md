@@ -14,15 +14,9 @@ This goal of this challenge is to build the back end for an e-commerce site. Due
 * Files under ***routes*** folder:
     * product-routes.js, tag-routes.js, and category-routes.js - needed complete route builds for various get, post, put/patch, and delete
 
-> User Story:
->>AS A manager at an internet retail company<br>
->>I WANT a back end for my e-commerce website that uses the latest technologies<br>
->>SO THAT my company can compete with other e-commerce companies<br>
-
+### Required links for review and grading submission
 [Github Repository Link](https://github.com/jscobie/BackSide-E-Commerce)<br>
-
-Video walkthrough of the working Employee Tracker command line application (challenge required options):<br>
-[Video walkthrough of completed application and Insomia results](https://link_here.com)
+[Video walkthrough of completed database build and populate. application start, and Insomia results](https://drive.google.com/file/d/1R2KS5Abt-DcnDB5KVsCNizCa_3IhBfM-/view)
 
 ## Table of Contents
 
@@ -36,32 +30,32 @@ Video walkthrough of the working Employee Tracker command line application (chal
 
 ## Installation
 
-1. Clone to your computer using SSH from GitHub:
+**1. Clone to your computer using SSH from GitHub:**
 ```
 git clone git@github.com:jscobie/BackSide-E-Commerce.git
 ```
-2. You'll need to run to install the node required dependencies after you clone the install by running:
+**2. You'll need to run to install the node required dependencies after you clone the install by running:**
 ```
 npm install
 ```
-3. You will need to make an .env file to handle the MySQL connection, an example file (.env.EXAMPLE) has been included for you to reference. Contents of .env.EXAMPLE are:
+**3. You will need to make an .env file to handle the MySQL connection, an example file (.env.EXAMPLE) has been included for you to reference. Contents of .env.EXAMPLE are:**
 ```
 DB_USER=''
 DB_PASSWORD=''
 DB_DBASE='employee_db'
 ```
-4. You will then need to run the following commands in your MySQL server command line to build the database and tables and then seed/populate the tables needed:
+**4. You will then need to run the following commands in your MySQL server command line to build the database and tables and then seed/populate the tables needed:**
 ```
 - mysql -u root -p
 - <enter password>
 - SOURCE db/schema.sql
 - USE ecommerce_db;
 ```
-5. You will need to seed the database:
+**5. You will need to seed the database:**
 ```
-node /seeds/seed.js
+node /seeds/index.js
 ```
-6. Finally to start the Employee Tracker you need the command:
+**6. Finally to start the Employee Tracker you need the command:**
 ```
 npm start
 ```
@@ -75,7 +69,33 @@ Read more about [MIT license](https://opensource.org/licenses/MIT).
 
 ## Tests
 
-N/A
+The tests to confirm working are all performed in Insomnia, included in the walkthrough video and explained below:
+***Tags*** tests:
+| HTTP Request Type | URL example                        | Output                        |
+| ----------------- | ---------------------------------- | ----------------------------- |
+| GET               | localhost:3001/api/tags            | View all data                 |
+| GET               | localhost:3001/api/tags/3          | View data for specified id    |
+| POST              | localhost:3000/api/tags            | Add new data                  |
+| PUT               | localhost:3000/api/tags/3          | Update data for specificed id |
+| DELETE            | localhost:3000/api/tags/3          | Delete data for specified id  |
+
+***Categories*** tests:
+| HTTP Request Type | URL example                        | Output                        |
+| ----------------- | ---------------------------------- | ----------------------------- |
+| GET               | localhost:3001/api/categories      | View all data                 |
+| GET               | localhost:3001/api/categories/3    | View data for specified id    |
+| POST              | localhost:3000/api/categories      | Add new data                  |
+| PUT               | localhost:3000/api/categories/3    | Update data for specificed id |
+| DELETE            | localhost:3000/api/categories/3    | Delete data for specified id  |
+
+***Products*** tests:
+| HTTP Request Type | URL example                        | Output                        |
+| ----------------- | ---------------------------------- | ----------------------------- |
+| GET               | localhost:3001/api/products        | View all data                 |
+| GET               | localhost:3001/api/products/3      | View data for specified id    |
+| POST              | localhost:3000/api/products        | Add new data                  |
+| PUT               | localhost:3000/api/products/3      | Update data for specificed id |
+| DELETE            | localhost:3000/api/products/3      | Delete data for specified id  |
 
 ## Credits
 
